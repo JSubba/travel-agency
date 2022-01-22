@@ -4,80 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>JSTravel | Contact</title>
+    <title>jsTravel | Contact</title>
     <link rel="icon" href="images/icon.png" />
   </head>
   <body>
-    <section class="showcase">
+    <section class="showcase bg-contact">
       <header>
         <h2 class="logo">
-          <a href="index.html"> JS<span>Travel</span></a>
+          <a href="index.html"> js<span>Travel</span></a>
         </h2>
         <div class="toggle"></div>
       </header>
 
-      <div class="contact-container">
-        <div class="contact-form">
-          <div>
-            <h1>Let's Connect</h1>
-            <h4>Have a question? Let's chat!</h4>
+      <div class="container contact-container p-0 p-lg-5 my-5">
+        <h1 class="text-center text-white my-4">Contact Us</h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-light fw-lighter"
+                >First Name</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
           </div>
-
-          <form>
-            <div>
-              <label for="name">
-                <span class="required">Name:</span>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  required="required"
-                />
-              </label>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label
+                for="exampleInputPassword1"
+                class="form-label text-light fw-lighter"
+                >Last Name</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                required
+              />
             </div>
-            <div>
-              <label for="email">
-                <span class="required">Email:</span>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required="required"
-                />
-              </label>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-light fw-lighter"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
             </div>
-            <div>
-              <label for="subject">
-                <span>Subject: </span>
-                <select id="subject" name="subject">
-                  <option value="hello">Subject</option>
-                  <option value="quote">Payment Inquiry</option>
-                  <option value="general">Destination inquiry</option>
-                </select>
-              </label>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label
+                for="exampleInputEmail1"
+                class="form-label text-light fw-lighter"
+                >Phone Number</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="+81 (90) 1234-5678"
+              />
             </div>
-            <div>
-              <label for="message">
-                <span class="required">Message: </span>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Message"
-                  required="required"
-                ></textarea>
-              </label>
-            </div>
-            <div>
-              <button name="submit" type="submit" id="submit">SUBMIT</button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div class="col-md-12">
+            <label for="message" class="form-label text-light fw-lighter"
+              >Message | Questions</label
+            >
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              cols="30"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="d-grid">
+            <button
+              class="btn btn-primary py-2 fs-5 fw-bold mt-3 mb-4"
+              type="submit"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </form>
       </div>
-
-      <div class="overlay"></div>
 
       <ul class="social">
         <li>
@@ -102,10 +135,16 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="destination.html">Destination</a></li>
         <li><a href="review.html">Review</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

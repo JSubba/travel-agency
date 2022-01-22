@@ -4,11 +4,11 @@ const cruiseHeading = document.querySelector(".cruise-heading");
 const cruiseCardDisplay = document.querySelector(".cruise-cards");
 
 menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    showcase.classList.toggle("active");
+  menuToggle.classList.toggle("active");
+  showcase.classList.toggle("active");
 });
 
 function cruiseExplore() {
-    cruiseHeading.style.display = "block";
-    cruiseCardDisplay.style.display = "flex";
+  cruiseHeading.style.display = "block";
+  cruiseCardDisplay.style.display = "flex";
 }

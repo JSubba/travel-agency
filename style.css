@@ -13,21 +13,32 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 10px;
+}
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  z-index: 20;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .logo {
-  color: var(--white);
-  font-weight: 400;
+  font-size: 25px;
   cursor: pointer;
 }
 header .logo a {
@@ -56,8 +67,6 @@ header .logo span {
   background-position: center;
   cursor: pointer;
 }
-
-/* SHOWCASE */
 .showcase {
   position: absolute;
   right: 0;
@@ -74,6 +83,7 @@ header .logo span {
 .showcase.active {
   right: 300px;
 }
+
 .showcase video {
   position: absolute;
   top: 0;
@@ -81,7 +91,7 @@ header .logo span {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .overlay {
   position: absolute;
@@ -89,7 +99,7 @@ header .logo span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(7, 132, 250, 0.8);
+  background: #0784facc;
   mix-blend-mode: overlay;
 }
 .text {
@@ -98,43 +108,25 @@ header .logo span {
 }
 .text h2 {
   font-size: 5em;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.text h4 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--white);
+  font-weight: 800;
+  color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text p {
-  font-size: 1.1em;
-  color: var(--white);
+  font-size: 1em;
+  color: var(--aliceWhite);
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
-.text a {
-  display: inline-block;
-  font-size: 1em;
-  background: var(--white);
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  border-radius: 5px;
-  color: var(--black);
-  letter-spacing: 2px;
-  transition: 0.2s ease;
-}
 .text a:hover {
-  letter-spacing: 3px;
+  transition: 0.5s ease;
+  transform: scale(0.98);
+  background-color: var(--white);
   color: var(--blue);
+  font-weight: 600;
+  border: none;
 }
 .social {
   position: absolute;
@@ -175,227 +167,48 @@ header .logo span {
 }
 .menu ul li a {
   text-decoration: none;
-  font-size: 22px;
-  color: var(--darkBlue);
+  font-size: 20px;
 }
 .menu ul li a:hover {
-  color: var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 2px;
 }
 
 /* DESTINATION */
-.destination-container {
-  height: 100%;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  color: var(--white);
-  text-align: center;
-  z-index: inherit;
-}
-.destination-container .heading {
-  width: 100%;
-  margin: 20px auto;
-  position: relative;
-}
-.destination-container .heading div {
-  width: 350px;
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  background-color: var(--darkBlue);
+.card-container .card {
+  width: 16rem;
+  border: 5px solid var(--white);
+  box-shadow: 3px 4px 5px rgb(255, 255, 255, 0.8);
   cursor: pointer;
 }
-.destination-container .heading div:hover {
-  box-shadow: 0 10px 20px var(--white);
-}
-.destination-container .heading div p {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 10px;
-  text-align: justify;
-  text-transform: uppercase;
-}
-.destination-container .heading div p:nth-child(2) {
-  text-align: center;
-  background-color: var(--aliceWhite);
-  font-size: 18px;
-  font-weight: 600;
-  padding: 8px;
-}
-.destination-container .heading div p:nth-child(2) a {
-  text-decoration: none;
-  color: var(--darkBlue);
-}
-.destination-container .heading h1 {
-  font-size: 3em;
-  font-weight: 200;
-  padding: 20px;
-}
-.destination-container .heading img {
-  width: 100%;
-}
-.destination-container .card-display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: -25px;
-}
-.destination-container .card {
-  height: 300px;
-  width: 250px;
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
-  background-color: var(--aliceWhite);
-  color: var(--primary);
-  border-radius: 10px;
-  box-shadow: 3px 6px 13px var(--aliceWhite);
-  transition: transform 0.2s ease-in;
-}
-.destination-container .card:hover {
-  animation: bounce 1s;
-  cursor: pointer;
-}
-.destination-container .card img {
-  width: 90%;
-  height: 82%;
-}
-.destination-container .card h3 {
-  color: var(--darkBlue);
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.destination-container #cruise {
-  display: none;
-}
-.destination-container .cruise-heading {
-  display: none;
-  text-align: center;
-  font-size: 2em;
-  font-weight: 200;
-  padding: 30px;
-  margin-bottom: 10px;
-}
-
-/* CONTACT */
-.contact-container {
-  height: 100%;
-  width: 100vw;
-  margin: 20px auto;
-  color: var(--blue);
-  z-index: inherit;
-}
-.contact-container h1 {
-  font-size: 3em;
-  font-weight: 300;
-  padding: 10px 0;
-}
-.contact-container h4 {
-  font-weight: 200;
-  padding-bottom: 15px;
-  margin-top: -15px;
-}
-.contact-form {
-  background-color: #cee6fc;
-  padding: 10px 20px 30px;
-  width: 80%;
-  margin: 30px auto;
-  border-radius: 5px;
-  box-shadow: 3px 6px 13px 1px var(--white);
-}
-.contact-form label {
-  font-size: 20px;
-  padding-bottom: 5px;
-}
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  width: 100%;
-  background: var(--white);
-  border: none;
-  border-radius: 3px;
-  margin: 10px 0;
-  padding: 15px;
-}
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  outline: none;
-}
-.contact-form textarea {
-  width: 100%;
-  height: 150px;
-}
-.contact-form button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: var(--blue);
-  color: var(--white);
-  font-size: 1.5em;
-  padding: 7px 10px;
-  border-radius: 5px;
-}
-.contact-form button[type="submit"]:hover {
-  transform: scaleY(1.05);
-  transition: transform 0.2s ease-in;
-  background-color: var(--brightBlue);
+.card-container .card:hover {
+  transform: scale(0.98);
+  transition: 0.2s ease-in;
 }
 
 /* REVIEW */
-.review-container {
-  min-height: 100%;
-  width: 100vw;
-  margin-top: 20px;
+.review {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.review-container .review-display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.review-display .box {
-  background: #fff;
-  width: 30%;
-  height: auto;
-  margin: 15px 0;
-  padding: 10px;
+.review .box {
+  width: 20rem;
   border-radius: 3px;
   box-shadow: 0px 4px 8px 3px var(--blue);
   cursor: pointer;
 }
-.review-display .box:hover {
+.review .box:hover {
   transform: scale(0.98);
   transition: 0.2s ease-in;
 }
-.review-display i.quote,
-.stars {
+.review i.quote {
+  font-size: 15px;
   color: var(--brightBlue);
 }
-.review-display .box i.quote {
-  font-size: 20px;
-}
-.review-display .box .content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.box .info .name {
-  font-weight: 600;
-  font-size: 17px;
-}
-.box .info .job {
-  font-size: 13px;
-  font-weight: 500;
-}
 .box .info .stars {
-  margin-top: 2px;
+  font-size: 12px;
 }
 .box .content .image {
   height: 75px;
@@ -410,100 +223,59 @@ header .logo span {
   border-radius: 50%;
   border: 2px solid var(--blue);
 }
-.readmore {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* FAQ */
+.faq-container {
+  width: 100%;
+  cursor: pointer;
 }
-.readmore a {
-  font-size: 1.2em;
-  color: var(--white);
-  border: 2px solid var(--blue);
-  border-radius: 3px;
-  text-decoration: none;
-  margin: 20px auto 10px;
-  padding: 7px 12px;
+.accordion-item {
+  border: none;
 }
-.readmore a:hover {
-  transform: scale(1.04);
+.accordion-button {
   background-color: var(--blue);
-  color: var(--white);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--darkBlue);
+}
+.accordion-button::after {
+  filter: brightness(0%) invert(100%);
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.bg-faq {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(27, 27, 27, 0.5)),
+    url(images/faq-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* KEYFRAME */
-@keyframes bounce {
-  0%,
-  20%,
-  60%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+/* CONTACT */
+.bg-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.5)),
+    url(images/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-container button:hover {
+  transform: scaleY(1.05);
+  transition: transform 0.2s ease-in;
+  background-color: var(--brightBlue);
 }
 
 /* MEDIA QUERY */
-@media (max-width: 580px) {
-  .contact-form {
-    width: 100%;
-  }
-  .review-display .box {
-    width: 100%;
-  }
-}
-@media (max-width: 880px) {
+@media (max-width: 991px) {
   .showcase,
   .showcase header {
-    padding: 30px;
+    padding: 40px;
   }
   .text h2 {
     font-size: 3em;
-    margin-bottom: 10px;
   }
-  .text h4 {
-    font-size: 1.5em;
-  }
-  .contact-form {
-    width: 80%;
-    margin: 50px auto;
-  }
-  .contact-form h1 {
-    font-size: 1.8em;
-  }
-  .destination-container {
-    margin: 100px auto;
-  }
-  .destination-container .heading h1 {
+  .text h3 {
     font-size: 2em;
-  }
-  .destination-container .heading div {
-    top: 120px;
-    left: 0;
-    width: 300px;
-  }
-  .destination-container .heading div p:nth-child(2) {
-    font-size: 15px;
-    padding: 5px;
-  }
-  .contact-form {
-    margin: 15% auto;
-  }
-}
-@media (max-width: 945px) {
-  .review-container h2 {
-    font-size: 20px;
-  }
-  .review-display .box {
-    width: 80%;
-  }
-  .review-container {
-    margin: 15% auto;
   }
 }
