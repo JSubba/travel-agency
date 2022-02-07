@@ -176,6 +176,9 @@ header .logo span {
 }
 
 /* DESTINATION */
+.carousel-inner img {
+  min-height: 350px;
+}
 .card-container .card {
   width: 16rem;
   border: 5px solid var(--white);
@@ -186,15 +189,31 @@ header .logo span {
   transform: scale(0.98);
   transition: 0.2s ease-in;
 }
+.explore-more {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 4px 5px rgb(255, 255, 255, 0.8);
+}
+.explore-more:hover {
+  transform: scale(0.98);
+  transition: 0.2s ease-in;
+}
+.modal-header,
+.modal-footer {
+  background-color: var(--darkBlue);
+}
 
 /* REVIEW */
-.review {
+.bg-review {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(27, 27, 27, 0.5)),
+    url(images/review-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .review .box {
-  width: 20rem;
+  width: 40rem;
+  background-color: var(--darkBlue);
   border-radius: 3px;
   box-shadow: 0px 4px 8px 3px var(--blue);
   cursor: pointer;
@@ -223,6 +242,10 @@ header .logo span {
   border-radius: 50%;
   border: 2px solid var(--blue);
 }
+.readmore:hover {
+  transform: scale(0.98);
+  transition: 0.2s ease-in;
+}
 
 /* FAQ */
 .faq-container {
@@ -236,7 +259,7 @@ header .logo span {
   background-color: var(--blue);
 }
 .accordion-button:not(.collapsed) {
-  background-color: var(--darkBlue);
+  background-color: var(--brightBlue);
 }
 .accordion-button::after {
   filter: brightness(0%) invert(100%);
@@ -277,5 +300,11 @@ header .logo span {
   }
   .text h3 {
     font-size: 2em;
+  }
+}
+
+@media (max-width: 568px) {
+  .card-container .card {
+    width: 20rem;
   }
 }
