@@ -198,10 +198,6 @@ header .logo span {
   animation: flash;
   animation-duration: 1s;
 }
-.modal-header,
-.modal-footer {
-  background-color: var(--darkBlue);
-}
 
 /* REVIEW */
 .bg-review {
