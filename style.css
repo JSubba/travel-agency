@@ -186,8 +186,8 @@ header .logo span {
   cursor: pointer;
 }
 .card-container .card:hover {
-  transform: scale(0.98);
-  transition: 0.2s ease-in;
+  animation: heartBeat;
+  animation-duration: 4s;
 }
 .explore-more {
   border: none;
@@ -195,8 +195,8 @@ header .logo span {
   box-shadow: 3px 4px 5px rgb(255, 255, 255, 0.8);
 }
 .explore-more:hover {
-  transform: scale(0.98);
-  transition: 0.2s ease-in;
+  animation: flash;
+  animation-duration: 1s;
 }
 .modal-header,
 .modal-footer {
@@ -219,8 +219,8 @@ header .logo span {
   cursor: pointer;
 }
 .review .box:hover {
-  transform: scale(0.98);
-  transition: 0.2s ease-in;
+  animation: shakeX;
+  animation-duration: 4s;
 }
 .review i.quote {
   font-size: 15px;
@@ -243,8 +243,8 @@ header .logo span {
   border: 2px solid var(--blue);
 }
 .readmore:hover {
-  transform: scale(0.98);
-  transition: 0.2s ease-in;
+  animation: flash;
+  animation-duration: 1s;
 }
 
 /* FAQ */
@@ -284,8 +284,8 @@ header .logo span {
   background-repeat: no-repeat;
 }
 .contact-container button:hover {
-  transform: scaleY(1.05);
-  transition: transform 0.2s ease-in;
+  animation: flash;
+  animation-duration: 1s;
   background-color: var(--brightBlue);
 }
 
@@ -303,7 +303,7 @@ header .logo span {
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .card-container .card {
     width: 20rem;
   }
