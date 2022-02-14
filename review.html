@@ -23,214 +23,374 @@
     <link rel="icon" href="images/icon.png" />
   </head>
   <body>
-    <section class="showcase bg-review">
+    <section class="showcase review-showcase">
       <header>
         <h2 class="logo">
           <a href="index.html"> js<span>Travel</span></a>
         </h2>
         <div class="toggle"></div>
       </header>
-      <div class="container p-0 pt-4 mt-5">
-        <div
-          class="review row g-2 g-lg-5 d-flex justify-content-evenly align-items-center"
-        >
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">Alex Smith</div>
-                <div class="job text-muted">
-                  <small>Designer | Tech</small>
+
+      <!-- review  -->
+      <div class="container review">
+        <h1 class="text-center text-white pt-5">Our Reviews</h1>
+        <div class="review-container text-center pt-4">
+          <div class="row pt-4">
+            <div class="col-sm-12 col-lg-10 offset-lg-1">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner pt-5">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img src="images/review_img1.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Alex Smith</h5>
+                      <p class="text-white">
+                        <small>
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti."</small
+                        >
+                        <br />
+                        <span class="text-white">
+                          <em><small>Designer | Tech</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/review_img2.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Steph Cross</h5>
+                      <p class="text-white">
+                        <small>
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti."</small
+                        >
+                        <br />
+                        <span class="text-white">
+                          <em><small>Youtuber | Media</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/review_img3.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Alice Suzuki</h5>
+                      <p class="text-white">
+                        <small>
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti."</small
+                        >
+                        <br />
+                        <span class="text-white">
+                          <em><small>Model | Fashion</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/review_img4.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Jodi Brown</h5>
+                      <p class="text-white">
+                        <small>
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti."</small
+                        >
+                        <br />
+                        <span class="text-white">
+                          <em><small>Journalist | TV</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/review_img5.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Jennifer Combs</h5>
+                      <p class="text-white">
+                        <small>
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti.""</small
+                        >
+                        <br />
+                        <span class="text-white">
+                          <em><small>Fashion Designer</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/review_img6.jpg" />
+                      <h5 class="text-white fw-bolder pt-4">Brian Alfred</h5>
+                      <p class="text-white">
+                        <small class="text-white">
+                          "Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. In iste vero dicta veritatis eligendi sit esse
+                          soluta deleniti."</small
+                        >
+                        <br />
+                        <span>
+                          <em><small>Partner</small></em>
+                        </span>
+                        <br /><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img1.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">Steph Cross</div>
-                <div class="job text-muted">
-                  <small>YouTuber | Media</small>
-                </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">Mary Suzuki</div>
-                <div class="job text-muted">
-                  <small>Model | Fashion</small>
-                </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img3.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">Jodi Brown</div>
-                <div class="job text-muted">
-                  <small>Journalist | TV</small>
-                </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img4.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">Agatha White</div>
-                <div class="job text-muted">
-                  <small>PR | Automotive</small>
-                </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img5.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="box col-sm-12 col-md-6 col-lg-4 p-4 my-3 border">
-            <i class="fas fa-quote-left quote"></i>
-            <span class="text-white fw-lighter fs-6"
-              ><small>
-                Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing
-                elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos
-                repellendus repudiandae deleniti ideas fuga molestiae, alias.
-              </small>
-            </span>
-            <i class="fas fa-quote-right quote"></i>
-            <div
-              class="content d-flex justify-content-between align-items-center"
-            >
-              <div class="info">
-                <div class="name fw-bold text-white">James Connery</div>
-                <div class="job text-muted">
-                  <small>COO | Logistics</small>
-                </div>
-                <div class="stars pt-1 text-white">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-              <div class="image">
-                <img src="images/review_img6.jpg" alt="" />
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    style="fill: #fff"
+                    ;
+                  >
+                    <path
+                      d="m8.121 12 4.94-4.939-2.122-2.122L3.879 12l7.06 7.061 2.122-2.122z"
+                    ></path>
+                    <path
+                      d="M17.939 4.939 10.879 12l7.06 7.061 2.122-2.122L15.121 12l4.94-4.939z"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    style="fill: #fff"
+                    ;
+                  >
+                    <path
+                      d="m13.061 4.939-2.122 2.122L15.879 12l-4.94 4.939 2.122 2.122L20.121 12z"
+                    ></path>
+                    <path
+                      d="M6.061 19.061 13.121 12l-7.06-7.061-2.122 2.122L8.879 12l-4.94 4.939z"
+                    ></path>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="readmore d-flex justify-content-center py-3 py-md-5 mb-5">
-          <button
-            type="button"
-            class="btn btn-light btn-lg px-4 px-md-5 py-2 py-md-3"
+        <!-- faq  -->
+        <div class="container faq-container py-5 mb-4 mx-auto">
+          <h1 class="faq-heading py-4 text-white text-center">
+            Frequently Asked Questions
+          </h1>
+          <div
+            class="accordion accordion-flush pt-4"
+            id="accordionFlushExample"
           >
-            <a href="index.html" class="text-decoration-none text-dark fw-bold"
-              >Read More>></a
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  How can I make reservations with your company?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                  blanditiis fuga incidunt labore, odio modi sed nemo provident
+                  repellat quis?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  What payments does your company accept?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi in recusandae enim. Accusantium labore a unde quidem
+                  maiores sit amet consectetur explicabo illum.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-2">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  How long does it take to confirm my reservation?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, commodi. Quo praesentium, quam voluptate deleniti
+                  minus hic non accusantium quas at voluptas, nihil id dolor
+                  quibusdam.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item my-2">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                What's the best season for a vacation in the Bahamas?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
             >
-          </button>
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam
+                accusamus cupiditate sint eligendi!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item my-2">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Do you have cruising vacation to all over the world?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam
+                accusamus commodi. Quo praesentium, quam voluptate deleniti
+                minus hic non accusantium quas at voluptas, nihil id dolor
+                quibusdam accusamus cupiditate commodi. Quo praesentium, quam
+                voluptate deleniti minus hic non accusantium quas at voluptas,
+                nihil id dolor quibusdam accusamus sint eligendi!
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -252,12 +412,12 @@
         </li>
       </ul>
     </section>
+
     <div class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="destination.html">Destination</a></li>
         <li><a href="review.html">Review</a></li>
-        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>

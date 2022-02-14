@@ -1,0 +1,52 @@
+{
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Las Mareas",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Royalton Saga",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Le Casablanca",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Vigi Cancun",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "San Solario",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Lasi Botenna",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "De Shangrilla",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Greek Moon",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
+      "image": "images/destination-img8.jpg"
+    }
+  ]
+}
