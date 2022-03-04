@@ -10,25 +10,70 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>jsTravel | Home</title>
-    <link rel="icon" href="images/icon.png" />
+    <link rel="icon" href="images/cruise.jpg" />
   </head>
   <body>
     <section id="home" class="showcase">
       <header>
-        <h2 class="logo">
-          <a href="index.html"> js<span>Travel</span></a>
-        </h2>
-        <div class="toggle"></div>
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="/images/cruise.jpg" alt="" width="50" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-white" href="destination.html"
+                    >Destination</a
+                  >
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-white" href="video.html">Videos</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-white" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mx-auto">
+                  <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
+
       <video src="videos/travel-video.mp4" muted loop autoplay></video>
-      <div class="text">
+
+      <div class="text pt-5">
         <h2>Dream Destination</h2>
         <h3 class="text-white text-uppercase fw-light pt-3">
           Awaiting For Your Amazing Vacation
         </h3>
-        <p class="fw-lighter">
+        <p class="fw-lighter lh-lg">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -45,31 +90,93 @@
 
       <ul class="social">
         <li>
-          <a href="https://facebook.com" target="_blank"
-            ><img src="https://i.ibb.co/x7P24fL/facebook.png"
-          /></a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
         </li>
         <li>
-          <a href="https://twitter.com" target="_blank"
-            ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"
-          /></a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
         </li>
         <li>
-          <a href="https://instagram.com" target="_blank"
-            ><img src="https://i.ibb.co/ySwtH4B/instagram.png"
-          /></a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
         </li>
       </ul>
     </section>
 
-    <div class="menu">
+    <!-- <section id="home" class="showcase">
+      <header>
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="images/cruise.jpg" alt="logo image" />
+          </a>
+        </h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="videos/travel-video.mp4" muted loop autoplay></video>
+
+      <div class="text">
+        <h2>Dream Destination</h2>
+        <h3 class="text-white text-uppercase fw-light pt-3">
+          Awaiting For Your Amazing Vacation
+        </h3>
+        <p class="fw-lighter lh-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <div class="main-btn">
+          <a href="destination.html" class="btn btn-outline-light btn-lg my-4"
+            >Explore Our Resorts</a
+          >
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <ul class="social">
+        <li>
+          <a href="https://facebook.com" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </section> -->
+
+    <!-- <div class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="destination.html">Destination</a></li>
-        <li><a href="review.html">Review</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
+    </div> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
