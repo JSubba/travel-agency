@@ -19,164 +19,517 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>jsTravel | Home</title>
-    <link rel="icon" href="images/cruise.jpg" />
+    <title>TravelSite</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
-    <section id="home" class="showcase">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="/images/cruise.jpg" alt="" width="50" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-auto">
-                  <a class="nav-link text-white" href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-auto">
-                  <a class="nav-link text-white" href="destination.html"
-                    >Destination</a
-                  >
-                </li>
-                <li class="nav-item mx-auto">
-                  <a class="nav-link text-white" href="video.html">Videos</a>
-                </li>
-                <li class="nav-item mx-auto">
-                  <a class="nav-link text-white" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item mx-auto">
-                  <a class="nav-link text-white" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <video src="videos/travel-video.mp4" muted loop autoplay></video>
-
-      <div class="text pt-5">
-        <h2>Dream Destination</h2>
-        <h3 class="text-white text-uppercase fw-light pt-3">
-          Awaiting For Your Amazing Vacation
-        </h3>
-        <p class="fw-lighter lh-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <div class="main-btn">
-          <a href="destination.html" class="btn btn-outline-light btn-lg my-4"
-            >Explore Our Resorts</a
-          >
-        </div>
-      </div>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+      <img src="images/logo.jpg" alt="logo" class="logo" />
+      <nav class="sideNav">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#offer">Offer</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <img
+        src="images/toggle-button.jpg"
+        alt="toggle button"
+        class="toggle-button"
+      />
+    </div>
+    </header>
+    
+    <!-- Home -->
+    <section id="home" class="home">
+      <div class="container">
+      <video 
+        playsinline
+        autoplay
+        muted
+        loop
+        loading="lazy"
+        poster="images/home-bg.jpg"
+      >
+        <source src="videos/travel-video.mp4" type="video/mp4" />
+      </video>
 
       <div class="overlay"></div>
 
-      <ul class="social">
-        <li>
-          <a href="https://facebook.com" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
-            <i class="bi bi-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com" target="_blank">
-            <i class="bi bi-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://youtube.com" target="_blank">
-            <i class="bi bi-youtube"></i>
-          </a>
-        </li>
-      </ul>
+      <div class="home-content">
+        <div class="container">
+        <div
+          class="row vh-100 align-items-center text-justify text-white"
+        >
+          <div class="col-12 col-md-6">
+            <h1>Dream Destination</h1>
+            <h3>"Amazing <br> <span>Experience</span>"</h3>
+            <a href="#destination" class="btn btn-lg mt-4">EXPLORE RESORTS<i class="bi bi-chevron-double-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
 
-    <!-- <section id="home" class="showcase">
-      <header>
-        <h2 class="logo">
-          <a href="index.html">
-            <img src="images/cruise.jpg" alt="logo image" />
+    <!-- Destination  -->
+    <section id="destination" class="destination">
+      <div class="container pb-5 mx-auto">
+        <h1 class="py-5 text-center fw-bold">
+          Destination Gallery
+        </h1>
+        <p class="text-justify lh-lg mx-auto">
+          Find the best deals on all-inclusive beach vacations at the top resort
+          brands in Mexico, Caribbean, Costa Rica and Panama for one price. Book
+          with confidence! These adults-only and family-focused resorts provide
+          exceptional value and enhanced cleanliness standards to ensure your
+          health, safety and peace of mind. Enjoy the water bungalows, private
+          pools, butler service, bpa treatments, bhampagne and much more.
+        </p>
+
+        <div id="destinations"></div>
+
+        <h2 class="text-center text-bold py-2 my-2">
+          <a href="#videos">
+            <button
+              class="btn btn-lg py-2 px-3 mt-3">              
+              Video Gallery<i class="bi bi-chevron-double-right"></i>
+            </button>
           </a>
         </h2>
-        <div class="toggle"></div>
-      </header>
+      </div>
+    </section>
 
-      <video src="videos/travel-video.mp4" muted loop autoplay></video>
-
-      <div class="text">
-        <h2>Dream Destination</h2>
-        <h3 class="text-white text-uppercase fw-light pt-3">
-          Awaiting For Your Amazing Vacation
-        </h3>
-        <p class="fw-lighter lh-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <div class="main-btn">
-          <a href="destination.html" class="btn btn-outline-light btn-lg my-4"
-            >Explore Our Resorts</a
-          >
+    <!-- Offer -->
+    <section id="offer" class="offer py-5">
+      <div class="container">
+        <div class="highlights">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Get 30% OFF Summer Discount</h2>
+              <p>Book before 30th April for 30% flat Discount</p>
+              <div class="col-md-12 pt-3">
+                <a href="#contact">
+                  <button type="button" class="btn">Book Now<i class="bi bi-exclamation-lg"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="overlay"></div>
+    <!-- Videos  -->
+    <section id="videos" class="videos">
+      <div class="container pb-5">
+        <h1 class="py-5 text-center fw-bold">Video Gallery</h1>
+        <p class="text-center">
+          Book
+          with confidence! These adults-only and family-focused resorts provide
+          exceptional value and enhanced cleanliness standards to ensure your
+          health, safety and peace of mind. Enjoy the water bungalows, private
+          pools, butler service, spa treatments, champagne etc.
+        </p>
+        <h4 class="text-center">Click on videos to to enjoy the beautiful coastal beach resorts!</h4>
 
-      <ul class="social">
-        <li>
-          <a href="https://facebook.com" target="_blank">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
-            <i class="bi bi-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com" target="_blank">
-            <i class="bi bi-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://youtube.com" target="_blank">
-            <i class="bi bi-youtube"></i>
-          </a>
-        </li>
-      </ul>
-    </section> -->
+        <div class="videoItem-container pt-2">
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video1.mp4" muted></video>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video2.mp4" muted></video>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video3.mp4" muted></video>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video4.mp4" muted></video>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video5.mp4" muted></video>
+            </div>
+          </div>
+          <div class="card">
+            <div class="video">
+              <video src="videos/destination-video8.mp4" muted></video>
+            </div>
+          </div>
+        </div>
 
-    <!-- <div class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="destination.html">Destination</a></li>
-        <li><a href="video.html">Videos</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div> -->
+        <h2 class="text-center text-bold py-2 my-2">
+          <a href="#destination">
+            <button class="btn btn-lg py-2 px-3 mt-3">
+              Photo Gallery<i class="bi bi-chevron-double-right"></i>
+            </button>
+          </a>
+        </h2>
+      </div>
+    </section>
+
+    <!-- FAQ  -->
+    <section id="faq" class="faq">
+      <div class="container faq-container py-5 mt-3 mx-auto">
+        <h1 class="faq-heading pb-4 text-center">
+          Frequently Asked Questions
+        </h1>
+        <div
+          class="accordion accordion-flush pt-4 pb-5"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                How can I make reservations with your company?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                blanditiis fuga incidunt labore, odio modi sed nemo provident
+                repellat quis?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                What payments does your company accept?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi in recusandae enim. Accusantium labore a unde quidem
+                maiores sit amet consectetur explicabo illum.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                How long does it take to confirm my reservation?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                What's the best season for a vacation in the Bahamas?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam
+                accusamus cupiditate sint eligendi!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Do you have vacation packages to all over the world?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam
+                accusamus commodi. Quo praesentium, quam voluptate deleniti
+                minus hic non accusantium quas at voluptas, nihil id dolor
+                quibusdam accusamus cupiditate commodi. Quo praesentium, quam
+                voluptate deleniti minus hic non accusantium quas at voluptas,
+                nihil id dolor quibusdam accusamus sint eligendi!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                My schedule has a change. How do I cancel my order?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, commodi. Quo praesentium, quam voluptate deleniti minus
+                hic non accusantium quas at voluptas, nihil id dolor quibusdam
+                accusamus commodi. Quo praesentium, quam voluptate deleniti
+                minus hic non accusantium quas at voluptas, nihil id dolor
+                quibusdam accusamus cupiditate commodi. Quo praesentium, quam
+                voluptate deleniti minus hic non accusantium quas at voluptas,
+                nihil id dolor quibusdam accusamus sint eligendi!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-center text-bold pb-2">
+          <button
+            class="btn btn-outline-primary btn-lg py-2 px-3 mt-3"
+            data-bs-toggle="modal"
+            data-bs-target="#find-more"
+          >
+            More Question<i class="bi bi-question-lg"></i>
+          </button>
+        </h2>
+      </div>
+    </section>
+
+    <!-- Contact  -->
+    <section id="contact" class="contact">
+      <div class="container p-0 p-lg-5">
+        <h1 class="text-center pt-5 pt-lg-0">Contact Us</h1>
+        <div class="map">
+          <div class="row my-5 mx-auto">
+            <div class="col-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12999.172151408055!2d139.63414575000002!3d35.45991785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c42f971e1ff%3A0x702e95bea7adb044!2sMinatomirai%2C%20Nishi%20Ward%2C%20Yokohama%2C%20Kanagawa%20220-0012!5e0!3m2!1sen!2sjp!4v1646292496040!5m2!1sen!2sjp"
+                width="100%"
+                height="210"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <form class="row g-3 mx-auto pb-5 pb-lg-0">
+          <div class="col-md-6">
+            <div>
+              <label for="exampleInputEmail1" class="form-label">First</label>
+              <input type="text" class="form-control" required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <label for="exampleInputPassword1" class="form-label">Last</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <label for="exampleInputEmail1" class="form-label">Phone</label>
+              <input type="password" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              cols="30"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="d-grid">
+            <button class="btn mt-4 py-2 fs-5" type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-md-3 pb-2 pb-lg-0">
+            <img src="images/logo.jpg" class="footer-logo" alt="footer logo image">
+          </div>
+          <div class="col-md-3 px-0 py-2 py-lg-0">
+            <h6 class="fw-bold">About Us</h6>
+            <p><small>Travel Site Inc.</small></p>
+            <p><small>Yokohama City</small></p>
+            <p><small><a href="#header">Customer Reviews</a></small></p>
+          </div>
+          <div class="col-md-3 px-0 py-2 py-lg-0">
+            <h6 class="fw-bold">Contact Us</h6>
+            <p><small><i class="bi bi-telephone"></i> +81 0120-6789</small></p>
+            <p><small><i class="bi bi-envelope"></i> contact@email.com</small></p>
+            <p><small><i class="bi bi-house"></i> travelsite.com</small></p>
+          </div>
+          <div class="col-md-3 px-0 py-2 py-lg-0">
+            <h6 class="fw-bold">Follow Us</h6>
+            <p><small>
+              <i class="bi bi-facebook"></i> <a href="https://www.facebook.com" target="_blank">Facebook</a></small></p>
+            <p><small>
+            <i class="bi bi-instagram"></i> <a href="https://www.instagram.com" target="_blank">Instagram</a></small></p>
+            <p><small>
+              <i class="bi bi-twitter"></i> <a href="https://www.twitter.com" target="_blank">Twitter</a></small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal  -->
+    <div
+      class="modal fade"
+      id="find-more"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-white" id="enrollLabel">
+              Enquiry Form
+            </h5>
+          </div>
+          <div class="modal-body">
+            <p class="text-dark fs-5"><small>All fields required!!</small></p>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label fw-light"
+                >Full Name</label
+              >
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label fw-light">Email</label>
+              <input type="text" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="question" class="col-form-label fw-light"
+                >Question</label
+              >
+              <textarea
+                type="text"
+                class="form-control"
+                id="question"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+            >
+              CLOSE
+            </button>
+            <a href="index.html">
+              <button type="button" class="btn">
+                SEND QUESTION
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

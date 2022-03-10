@@ -2,55 +2,41 @@
   "destinations": [
     {
       "id": "1",
-      "name": "Las Mareas",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
-      "image": "images/destination-img1.jpg",
-      "video": "videos/destination-video1.mp4"
-    },
-    {
-      "id": "2",
       "name": "Royalton Saga",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img2.jpg",
       "video": "videos/destination-video2.mp4"
     },
     {
-      "id": "3",
+      "id": "2",
       "name": "Le Casablanca",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img3.jpg",
       "video": "videos/destination-video3.mp4"
     },
     {
-      "id": "4",
+      "id": "3",
       "name": "Vigi Cancun",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img4.jpg",
       "video": "videos/destination-video4.mp4"
     },
     {
-      "id": "5",
+      "id": "4",
       "name": "San Solario",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img5.jpg",
       "video": "videos/destination-video5.mp4"
     },
     {
-      "id": "6",
+      "id": "5",
       "name": "Lasi Botenna",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img6.jpg",
       "video": "videos/destination-video6.mp4"
     },
     {
-      "id": "7",
-      "name": "De Shangrilla",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
-      "image": "images/destination-img7.jpg",
-      "video": "videos/destination-video7.mp4"
-    },
-    {
-      "id": "8",
+      "id": "6",
       "name": "Greek Moon",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia doloremque tempore non hic veniam nesciunt.",
       "image": "images/destination-img8.jpg",

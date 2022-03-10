@@ -1,3 +1,22 @@
+// nav slide
+const toggleButton = document.querySelector(".toggle-button");
+const sidenav = document.querySelector(".sideNav");
+
+sidenav.style.right = "-25em";
+toggleButton.addEventListener("click", () => {
+  if (sidenav.style.right == "-25em") {
+    sidenav.style.right = "0";
+  } else {
+    sidenav.style.right = "-25em";
+  }
+});
+
+// smooth scroll
+let scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 500,
+  speedAsDuration: true,
+});
+
 // destination data
 const destinationDOM = document.getElementById("destinations");
 const videoDOM = document.getElementById("videos");
@@ -15,7 +34,7 @@ fetch("destinations.json")
 
       displayDestinations += `
         <div class="card">
-          <a href="#"
+          <a href="#header"
             ><img
               src="${image}"
               class="card-img-top"
